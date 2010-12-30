@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>SanjaySites - A website for everyone</title>
+        <link rel="stylesheet" type="text/css" href="<?=Zend_Registry::get('baseurl')?>/css/general.css">
+    </head>
+<body>
+
+<!-- The main container starts here -->
+<div id="container">
+
+    
+<!-- Header -->
+<div id="header">
+<!-- <h2>SanjaySites</h2> -->
+<a href="/"><img alt="sanjaysites - a website for everyone" src="<?=Zend_Registry::get('baseurl')?>/images/mainlogo.png" border="0" ></a>
+</div>
+<!-- Header -->
+
+<div id="seperator">&nbsp;</div>
+
+<!-- Left -->
+<div id="left">
+    <?php echo $this->layout()->content; ?>
+</div>
+<!-- Left -->
+
+<!-- Right -->
+<div id="right">
+
+<div id="loginbox">
+<h3>Login Now!</h3>
+<div>Username</div>
+<div><input type="text" name="username" /></div>
+<div>Password</div>
+<div><input type="password" name="password" /></div>
+<div><input type="submit" name="submit" value="Go" /></div>
+</div>
+
+<!-- Signup Message Box -->
+<div id="signupboxrightmsg">
+<div id="signupboxrightmsgHeader">Join SanjaySites</div>
+<p>Make your presence on the world wide web. Its easy, simple and free.</p>
+<a href="/index/signup">Register for an account</a>
+</div>
+<!-- Signup Message Box -->
+
+</div>
+<!-- Right -->
+
+<!-- Footer -->
+<div id="footer">
+    <div id="copyright">Venture by webnanos.com</div>
+</div>
+<!-- Footer -->
+
+</div>
+<!-- The main container ends here -->
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<style>
+<!--
+#indexpage{
+color:#000;
+}
+input{
+font-family:arial;
+font-size:16px;
+font-weight:bold;
+border: solid 1px #A3A3A3;
+padding:5px;
+
+}
+textarea{
+border: solid 1px #e7edec;
+padding:5px;
+ /* the border will curve into a 'D' */
+ -moz-border-radius: 0 50px 50px 0;
+       border-radius: 0 50px 50px 0;
+}
+.forminputmessage{
+font-size:9px;
+font-family:sans serif;
+}
+.formerrormessage{
+font-size:11px;
+font-family:sans serif;
+color:red;
+
+}
+form p{
+font-family:arial;
+font-size:16px;
+}
+-->
+</style>
+<div id="indexpage">
+    <h2>Fill up the form</h2>
+    
+    <form action="" method="POST">
+    <p>Name  <br><input type="text" name="name" value="<?php echo $this->postInfo['name']?>" />&nbsp;<span class="formerrormessage"><?=($this->errorMessage['name'])?$this->errorMessage['name']:''?></span></p>
+    <p>Username  <span class="forminputmessage">(6 to 12 characters)</span><br><input type="text" name="username" value="<?php echo $this->postInfo['username']?>" />&nbsp;<span class="formerrormessage"><?=($this->errorMessage['username'])?$this->errorMessage['username']:''?></span></p>
+    <p>Password  <span class="forminputmessage">(6 to 12 characters)</span><br><input type="password" name="password" value="<?php echo $this->postInfo['password']?>" />&nbsp;<span class="formerrormessage"><?=($this->errorMessage['password'])?$this->errorMessage['password']:''?></span></p>
+    <p>Email<br><input type="text" name="email" value="<?php echo $this->postInfo['email']?>" />&nbsp;<span class="formerrormessage"><?=($this->errorMessage['email'])?$this->errorMessage['email']:''?></span></p>
+    <p>Phone<br><input type="text" name="phone" value="<?php echo $this->postInfo['phone']?>" />&nbsp;<span class="formerrormessage"><?=($this->errorMessage['phone'])?$this->errorMessage['phone']:''?></span></p>
+    <p><input type="submit" name="submit" value="Submit" /></p>
+    </form>
+    
+</div>
